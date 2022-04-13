@@ -1,4 +1,4 @@
-package StringSearchingAlgos;
+ package StringSearchingAlgos;
 
 public class KMPAlgo {
 	public static void LPS(String pat,int m,int lps[]) {
@@ -19,6 +19,9 @@ public class KMPAlgo {
 				}
 			}
 		}
+//		for(int k=0;k<m;k++) {
+//			System.out.print(lps[k]+" ");
+//		}
 		
 	}
 	public static void KMPAlgorithm(String str,String pat) {
