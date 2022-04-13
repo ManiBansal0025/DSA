@@ -48,8 +48,8 @@ public class KMPAlgo {
 		}
 	}
 	public static void main(String args[]) {
-		String str = "abcdabcabcabcdabcabcdabc";
-		String pat = "abcdabc";
+		String str = "abcdabcabcabcdabcabcdabca";
+		String pat = "abcdabca";
 		KMPAlgorithm(str,pat);
 		System.out.println();
 	}
