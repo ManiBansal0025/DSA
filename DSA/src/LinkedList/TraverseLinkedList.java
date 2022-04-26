@@ -1,5 +1,4 @@
 package LinkedList;
-
 public class TraverseLinkedList {
 	public static void traverse(Node head) {
 		Node cur = head;
@@ -27,12 +26,4 @@ public class TraverseLinkedList {
 		
 	}
 
-}
-class Node{
-	int data;
-	Node next;
-	Node(int d){
-		data = d;
-		next = null;
-	}
 }
