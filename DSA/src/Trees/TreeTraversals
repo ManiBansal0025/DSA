@@ -1,0 +1,68 @@
+package Trees;
+public class TreeTraversals {
+
+class Node{
+	int data;
+	Node left;
+	Node right;
+	Node(int d){
+		data = d;
+		left = null;
+		right = null;
+	}
+}
+static Node root;
+
+public void createBinaryTree() {
+	Node first = new Node(4);
+	Node second = new Node(3);
+	Node third = new Node(7);
+	Node fourth = new Node(-1);
+	Node fifth = new Node(10);
+	Node sixth = new Node(5);
+	
+	
+	root = first;
+	first.left = second;
+	first.right = third;
+	second.left = fourth;
+	third.right = fifth;
+	third.left = sixth;
+	
+}
+public void printInorder(Node root) {
+	if(root == null)
+		return;
+	printInorder(root.left);
+	System.out.print(root.data+" ");
+	printInorder(root.right);
+}
+public void printPreorder(Node root) {
+	if(root == null)
+		return;
+	System.out.print(root.data+" ");
+	printInorder(root.left);
+	printInorder(root.right);
+}
+public void printPostorder(Node root) {
+	if(root == null)
+		return;
+	printInorder(root.left);
+	printInorder(root.right);
+	System.out.print(root.data+" ");
+}
+
+
+	public static void main(String args[]) {
+		TreeTraversals tt = new TreeTraversals();
+		tt.createBinaryTree();
+		tt.printInorder(root);
+		System.out.println();
+		tt.printPreorder(root);
+		System.out.println();
+		tt.printPostorder(root);
+		System.out.println();
+		
+	}
+
+}
